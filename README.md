@@ -10,5 +10,12 @@ The simplied Sequence Ontology
 ```
 $ git clone https://github.com/thobalose/soneo.git
 $ cd soneo
-$ grails run-app
+```
+Visualise on Neo4j using Docker
+```
+$ docker run -d \
+    -e NEO4J_UID=$(id -u) -e NEO4J_GID=$(id -g) -e NEO4J_AUTH=none \
+    -v $(pwd)/data/neo4j:/data \
+    -p 7474:7474 \
+    thoba/soneo
 ```
