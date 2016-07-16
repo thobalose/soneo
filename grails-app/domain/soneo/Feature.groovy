@@ -1,11 +1,12 @@
 package soneo
 
 class Feature {
-    String name
+//    String name
     Date created = new Date()
-    static hasMany = [feature: Gene]
+    static hasMany = [gene: Gene, exon:Exon, transcript:Transcript, utr:Utr]
 
     static constraints = {
+//        name(blank: false)
     }
     static mapWith = "neo4j"
 }
