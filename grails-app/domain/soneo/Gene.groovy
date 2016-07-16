@@ -2,6 +2,7 @@ package soneo
 
 class Gene {
     String name
+    Boolean coding
     Date created = new Date()
     static belongsTo = [is_a: Feature]
 
