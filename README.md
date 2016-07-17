@@ -11,7 +11,10 @@ The simplied Sequence Ontology
 $ git clone https://github.com/thobalose/soneo.git
 $ cd soneo
 ```
-Visualise on Neo4j using Docker
+You can start the App using `grails run-app` or Visualise on Neo4j using Docker.
+
+With Neo4j in embedded mode, one program and only one program can read and write to the database at a time.
+
 ```
 $ docker run -d \
     -e NEO4J_UID=$(id -u) -e NEO4J_GID=$(id -g) -e NEO4J_AUTH=none \
@@ -19,3 +22,4 @@ $ docker run -d \
     -p 7474:7474 \
     thoba/soneo
 ```
+Point your browser to [http://localhost:7474](http://localhosT:7474). 
