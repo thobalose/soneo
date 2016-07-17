@@ -3,7 +3,7 @@ A simple Grails App to represent the [simplified Sequence Ontology](http://gmod.
 
 The simplied Sequence Ontology
 
-![So-slim-example](http://gmod.org/mediawiki/images/1/16/So-slim-example.png "So-slim-example")
+![So-slim-example](https://github.com/thobalose/soneo/blob/master/soneo.png "So-slim-example")
 
 ### Getting Up and Running
 
