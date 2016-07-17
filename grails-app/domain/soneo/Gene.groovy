@@ -1,5 +1,8 @@
 package soneo
 
+import groovy.transform.ToString
+
+@ToString(includes = 'name')
 class Gene {
     String name = "Gene"
     Date created = new Date()

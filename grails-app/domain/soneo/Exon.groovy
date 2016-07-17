@@ -1,5 +1,8 @@
 package soneo
 
+import groovy.transform.ToString
+
+@ToString(includes = 'name')
 class Exon {
     String name
     Date created = new Date()

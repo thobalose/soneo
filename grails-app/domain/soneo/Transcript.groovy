@@ -1,5 +1,8 @@
 package soneo
 
+import groovy.transform.ToString
+
+@ToString(includes = 'name')
 class Transcript {
     String name
     Date created = new Date()
