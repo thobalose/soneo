@@ -3,18 +3,21 @@ A simple Grails App to represent the [simplified Sequence Ontology](http://gmod.
 
 ![So-slim-example](https://github.com/thobalose/soneo/blob/master/soneo.png "So-slim-example")
 
-### Getting Up and Running
+## Getting Up and Running
 
 ```
 $ git clone https://github.com/thobalose/soneo.git
 $ cd soneo
 ```
 
+
+We can start our App using `$ grails run-app` ([http://localhost:8080](http://localhost:8080)) and use the scaffold controllers to add more data.
+
 *The App is integrated with Neo4j in embedded mode, thus one program and only one program can read and write to the database at a time.*
 
-You can start the App using `grails run-app` ([http://localhost:8080](http://localhost:8080)) and use the scaffold controllers to add more data
-or visualise the already existing data using a slightly modified Neo4j Docker image (`thoba/soneo`).
-
+### Exploring data in Neo4j
+To visualise the already existing/generated data, we will use a slightly modified Neo4j Docker image (`thoba/soneo`) to cater for `docker` running as `root`.
+Run the image using the following command:
 
 ```
 $ docker run -d \
