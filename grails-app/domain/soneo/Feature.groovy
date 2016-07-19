@@ -4,7 +4,7 @@ import groovy.transform.ToString
 
 @ToString(includes = 'name')
 class Feature {
-    String name = "Feature"
+    String name
     Date created = new Date()
     static hasMany = [gene: Gene, exon:Exon, transcript:Transcript, utr:Utr]
 
